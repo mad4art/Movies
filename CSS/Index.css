@@ -1,0 +1,37 @@
+body {background-color: #181a1b;}
+header, .sub, .main, #title{
+    padding: 0px;
+    text-align: center;
+    font: 22px bold;
+    color: white;
+    font-style: Arial, Helvetica, sans-serif;
+}
+.movie_pic, .movie_pic_18plus{
+    width: 200px;
+    height: 300px;
+    margin: 22.4px;
+    margin-bottom: 25px;
+    border: solid 1px black;
+    float: left;
+    background-color: grey;
+    transition: ease 0.5s, 0.5s;
+}
+.movie_pic_18plus{
+    display: none;
+}
+.movie_pic:hover, .movie_pic_18plus:hover{
+    width: 225px;
+    height: 337px;
+    cursor: pointer;
+    margin: 10px;
+    margin-bottom: 0px;
+    border: solid 1px black;
+}
+.main{
+    line-height: 22px;
+    font: 16px lighter;
+}
+#checkbox1{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html>
+
+<head>
+<script type="text/javascript">
+    $(document).ready(function() {
+                $('input[type="checkbox"]').click(function() {
+                    var inputValue = $(this).attr("value");
+                    $("." + inputValue).toggle();
+                    alert("Checkbox " + inputValue + " is selected");
+                });
+            });
+</script>
+<title>Movies</title>
+<link rel="StyleSheet" href="css/Index.css"/>
+<script src="myScript.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="checkbox1"/>
+    <div id="autoUpdate" class="autoUpdate">Show 18+ Movies</div>
+    <div class="movie">
+        <div><img class="movie_pic" style="display:none" src="Images/Baby Driver.jpg" onclick="location.href='Baby Driver.html'"/></div>
+    </div>
+    <div class="movie">
+        <div><img class="movie_pic" src="Images/Bolt.jpg" onclick="location.href='Bolt.html'"/></div>
+    </div>
+    <div class="movie">
+        <div><img class="movie_pic" style="display:none" src="Images/Deadpool.jpg" onclick="location.href='Deadpool.html'"/></div>
+    </div>
+    <div class="movie">
+        <div><img class="movie_pic" style="display:none" src="Images/Paul.jpg" onclick="location.href='Paul.html'"/></div>
+    </div>
+    <div class="movie">
+        <div><img class="movie_pic" style="display:none" src="Images/sinister.jpeg" onclick="location.href='Sinister.html'"/></div>
+    </div>
+</body>
+</html>

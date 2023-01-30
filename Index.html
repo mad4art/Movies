@@ -3,36 +3,18 @@
 <html>
 
 <head>
-<script type="text/javascript">
-    $(document).ready(function() {
-                $('input[type="checkbox"]').click(function() {
-                    var inputValue = $(this).attr("value");
-                    $("." + inputValue).toggle();
-                    alert("Checkbox " + inputValue + " is selected");
-                });
-            });
-</script>
-<title>Movies</title>
+<script language="JavaScript" src="JavaScript/SignIn.js"></script>
+<title>Sign In</title>
 <link rel="StyleSheet" href="css/Index.css"/>
-<script src="myScript.js"></script>
 </head>
 <body>
-    <input type="checkbox" id="checkbox1"/>
-    <div id="autoUpdate" class="autoUpdate">Show 18+ Movies</div>
-    <div class="movie">
-        <div><img class="movie_pic" style="display:none" src="Images/Baby Driver.jpg" onclick="location.href='Baby Driver.html'"/></div>
-    </div>
-    <div class="movie">
-        <div><img class="movie_pic" src="Images/Bolt.jpg" onclick="location.href='Bolt.html'"/></div>
-    </div>
-    <div class="movie">
-        <div><img class="movie_pic" style="display:none" src="Images/Deadpool.jpg" onclick="location.href='Deadpool.html'"/></div>
-    </div>
-    <div class="movie">
-        <div><img class="movie_pic" style="display:none" src="Images/Paul.jpg" onclick="location.href='Paul.html'"/></div>
-    </div>
-    <div class="movie">
-        <div><img class="movie_pic" style="display:none" src="Images/sinister.jpeg" onclick="location.href='Sinister.html'"/></div>
+    <div id="SignInGroup">
+        <label id="SignInLabel">Sign In</label>
+        <label for="Username" id="UsernameLabel">Username:</label>
+        <input type="text" id="Username" name="Username"><br><br>
+        <label for="Password" id="PasswordLabel">Password:</label>
+        <input type="text" id="Password" name="Password"><br><br>
+        <input type="submit" value="Sign In" id="SignIn" onclick="SignIn()">
     </div>
 </body>
 </html>
